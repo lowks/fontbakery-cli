@@ -45,7 +45,6 @@ setup(
              'tools/bakery-vmet-fix.py',
              'tools/bakery-lint.py'
              ],
-    include_package_data=True,
     zip_safe=False,
     classifiers=[
         'Environment :: Console',
@@ -55,11 +54,9 @@ setup(
         'Programming Language :: Python',
     ],
     package_data={
-        'bakery_cli': [
+        '': [
             'defaults.yaml',
-            'scrapes/familynames/scrapy.cfg'
-        ],
-        'bakery_lint': [
+            'scrapes/familynames/scrapy.cfg',
             'tests/upstream/diacritics.txt',
             'tests/*.txt',
             'tests/*.mkd'
